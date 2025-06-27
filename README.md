@@ -1,4 +1,4 @@
-# Campus Events Knowledge System (CEKS)
+# CampusPulse - Campus Events Knowledge System
 
 > 🔔 A modified version of [Bilal025/EventoEMS](https://github.com/Bilal025/EventoEMS)  
 > 🎓 Developed as part of an academic project for the course **Knowledge Management System**  
@@ -7,7 +7,7 @@
 
 ## 🎯 Project Description
 
-**CEKS** is a centralized web-based platform that enables students and organizers to interact with campus-based events effectively. It was designed to address the limitations of fragmented event communication across student clubs, posters, and messaging groups. The system allows:
+**CampusPulse** is a centralized web-based platform that enables students and organizers to interact with campus-based events effectively. It was designed to address the limitations of fragmented event communication across student clubs, posters, and messaging groups. The system allows:
 
 - 🔍 Students to search, filter, register, and review events.
 - 🧑‍🏫 Organizers to create, update, and delete events.
