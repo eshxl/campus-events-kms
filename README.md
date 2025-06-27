@@ -2,7 +2,6 @@
 
 > 🔔 A modified version of [Bilal025/EventoEMS](https://github.com/Bilal025/EventoEMS)  
 > 🎓 Developed as part of an academic project for the course **Knowledge Management System**  
-> 🏫 Vellore Institute of Technology (VIT), Winter Semester 2024–25  
 
 ---
 
@@ -35,10 +34,10 @@ The system integrates **knowledge management principles** like knowledge creatio
 > (Optional: You can add image files inside a `/screenshots/` folder in the repo and replace the filenames below)
 
 ### 🔐 Login Page
-![Login](./screenshots/Login.png)
+![Login](./screenshots/Login1.png)
 
 ### 📝 SignUp Page
-![SignUp](./screenshots/SignUp.png)
+![SignUp](./screenshots/SignUp1.png)
 
 ### 🎉 Home Page with Search and Filters
 ![Home](./screenshots/Main.png)
@@ -47,13 +46,13 @@ The system integrates **knowledge management principles** like knowledge creatio
 ![](./screenshots/Student1.png)
 ![](./screenshots/Student2.png)
 ![](./screenshots/Student3.png)
-![](./screenshots/Student4.png)
 
 ### 📄 Event Organizer View
 ![](./screenshots/Org1.png)
 ![](./screenshots/Org2.png)
 ![](./screenshots/Org3.png)
 ![](./screenshots/Org4.png)
+![](./screenshots/Org5.png)
 
 ---
 
