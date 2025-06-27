@@ -92,8 +92,8 @@ npm run dev
 ```
 
 ## 🔏 Disclaimer & License
-This is a modified version of Bilal025/EventoEMS, adjusted for academic purposes only.
-Credits for the original architecture and base design go to Bilal025.
+This is a modified version of [Bilal025/EventoEMS](https://github.com/Bilal025/EventoEMS), adjusted for academic purposes only.
+Credits for the original architecture and base design go to [Bilal025](https://github.com/Bilal025).
 
 We have made substantial changes including:
 
