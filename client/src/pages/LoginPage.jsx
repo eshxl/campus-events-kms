@@ -12,6 +12,7 @@ export default function LoginPage() {
   const [rememberMe, setRememberMe] = useState(false);
   const {setUser} = useContext(UserContext);
 
+  console.log("Logging in with:", { email, password });
 
   //! Fetch users from the server --------------------------------------------------------------
   useEffect(() => {
@@ -27,26 +28,31 @@ export default function LoginPage() {
   async function loginUser(ev){
       ev.preventDefault();
 
-      try{
-        const {data} = await axios.post('/login', {email, password})
-        setUser(data);
-        alert('Login success');
-
-        if (rememberMe) {
-          // If the user checked, store their email in localStorage.
-          localStorage.setItem('rememberedEmail', email);
-          localStorage.setItem('rememberedpass', password);
+      try {
+        const res = await axios.post("/login", { email, password }, { withCredentials: true });
+      
+        if (res.data) {
+          setUser(res.data);
+          alert("Login success");
+      
+          if (rememberMe) {
+            localStorage.setItem("rememberedEmail", email);
+            localStorage.setItem("rememberedpass", password);
+          } else {
+            localStorage.removeItem("rememberedEmail");
+            localStorage.removeItem("rememberedpass");
+          }
+      
+          setRedirect(true);
         } else {
-          // If the user didnt checked, remove their email from localStorage.
-          localStorage.removeItem('rememberedEmail');
+          alert("Login failed: No user data received");
         }
-
-        setRedirect(true)
-      }catch(e){
-        alert('Login failed');
+      } catch (e) {
+        console.error("Login error:", e);
+        alert("Login failed");
       }
   }
-
+      
   if(redirect){
     return <Navigate to={'/'}/>
   }

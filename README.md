@@ -1,49 +1,109 @@
-# EventoEMS - Event Management System
+# Campus Events Knowledge System (CEKS)
 
-Introducing our Event Management System, a solution developed as part of our final year group project, designed to streamline campus event planning, registration, and ticket booking. I played a key role as the architect, creating the user interface where I incorporated modern design principles and prioritized user experience. We are developing the system using the MERN stack (MongoDB, Express.js, React.js, Node.js), and we are utilizing the agile Scrum methodology for efficient development.
+> 🔔 A modified version of [Bilal025/EventoEMS](https://github.com/Bilal025/EventoEMS)  
+> 🎓 Developed as part of an academic project for the course **Knowledge Management System**  
+> 🏫 Vellore Institute of Technology (VIT), Winter Semester 2024–25  
 
-**Skills:** *Figma · Ui/ux · React.js · MongoDB · Node.js · Express.js · Requirements Analysis · User Interface Design*
+---
 
-**Features**
-* Schedule a Event.
-* View upcoming events.
-* View the event calendar.
-* Getting approval for the events.
-* Ticket Booking for the event.
-* QR Code generation for receiving tickets.
+## 🎯 Project Description
 
-**Technologies Used**
-* ReactJs
-* NodeJs
-* ExpressJs
-* MongoDB
-* NPM (Node Package Manager)
-* JWT webtoken
-* QR code
+**CEKS** is a centralized web-based platform that enables students and organizers to interact with campus-based events effectively. It was designed to address the limitations of fragmented event communication across student clubs, posters, and messaging groups. The system allows:
 
-**_Getting Started_**
+- 🔍 Students to search, filter, register, and review events.
+- 🧑‍🏫 Organizers to create, update, and delete events.
+- 🔐 Role-based login and access control for secure workflows.
+- ⭐ Rating and feedback collection to promote knowledge reuse and reflection.
 
-**Prerequisites**
-* Node.js and npm installed
-* MongoDB Database
+The system integrates **knowledge management principles** like knowledge creation (user reviews), knowledge sharing (searchable listings), and knowledge storage (event/user DB).
 
-**Instalaltion**
-1. Clone the repository to your local machine.
-2. Navigate to the project directory. use two terminal <br>
-    **Cd Client** - For Frontend <br>
-    **Cd api** - For Backend <br>
-3. Install server dependenciesfor both frontend and backend.
-4. Create a .env file in the root directory with the following content, and replace placeholders with your own values. <br>
-     MONGODB_URI=mongodb://localhost/your-database-name
-5. Start the server.<br>
-     **ems/api:** nodemon start<br>
-     if the command is not working use **PowerShell -ExecutionPolicy Bypass nodemon** this command.
-7. Start the Client:<br>
-      **ems/client:** npm run dev
+---
 
-**The application should now be running. You can access it at http://localhost:5173**<br>
-**The Server is running on http://localhost:4000**
+## 🛠️ Tech Stack
 
-<h1>Thank You</h1>
+- **Frontend**: React.js + Tailwind CSS
+- **Backend**: Node.js + Express.js
+- **Database**: MongoDB Atlas
+- **Authentication**: JWT with cookies
+- **File Uploads**: Multer
+- **Other Tools**: Postman, Visual Studio Code, GitHub
 
-![portfolio_1](https://github.com/Bilal025/EventoEMS/assets/95700674/001ddf1c-72b3-40bb-8e3e-975ae00ccee5)
+---
+
+## 📸 Screenshots
+
+> (Optional: You can add image files inside a `/screenshots/` folder in the repo and replace the filenames below)
+
+### 🔐 Login Page
+![Login](./screenshots/Login.png)
+
+### 📝 SignUp Page
+![SignUp](./screenshots/SignUp.png)
+
+### 🎉 Home Page with Search and Filters
+![Home](./screenshots/Main.png)
+
+### 📄 Student View
+![](./screenshots/Student1.png)
+![](./screenshots/Student2.png)
+![](./screenshots/Student3.png)
+![](./screenshots/Student4.png)
+
+### 📄 Event Organizer View
+![](./screenshots/Org1.png)
+![](./screenshots/Org2.png)
+![](./screenshots/Org3.png)
+![](./screenshots/Org4.png)
+
+---
+
+## 🚀 Features
+
+| Feature                          | Description                                                  |
+|----------------------------------|--------------------------------------------------------------|
+| 🔐 Role-based Authentication     | Students and organizers have different privileges            |
+| 📝 Event Creation (Organizers)  | Add event details, categories, image upload                  |
+| 📅 Event Registration (Students) | One-click registration with duplicate prevention             |
+| ⭐ Ratings & Reviews             | Students leave feedback visible to future participants       |
+| 🔍 Search & Filter               | Search by title or filter by category                        |
+| ✏️ Edit/Delete Event            | Organizers can manage event updates or cancelations          |
+| 📱 Responsive UI                | Clean and mobile-friendly interface using Tailwind CSS       |
+
+---
+
+## 📖 How to Run the Project
+
+> Ensure you have **Node.js**, **npm**, and a valid **MongoDB Atlas URI**.
+
+### 🔧 Backend (server)
+
+```bash
+cd server
+npm install
+touch .env
+# Add this inside .env file
+MONGO_URL=<your_mongodb_uri>
+npm start
+```
+
+### 💻 Frontend (client)
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+## 🔏 Disclaimer & License
+This is a modified version of Bilal025/EventoEMS, adjusted for academic purposes only.
+Credits for the original architecture and base design go to Bilal025.
+
+We have made substantial changes including:
+
+* UI and component structure redesign
+* Full feature upgrades like role-based access and JWT login
+* Ratings & review integration
+* Organizer-only privileges and event editing
+* Mobile responsiveness and code optimization
+
+This fork is NOT for commercial use.
