@@ -31,8 +31,6 @@ The system integrates **knowledge management principles** like knowledge creatio
 
 ## 📸 Screenshots
 
-> (Optional: You can add image files inside a `/screenshots/` folder in the repo and replace the filenames below)
-
 ### 🔐 Login Page
 ![Login](./screenshots/Login1.png)
 
